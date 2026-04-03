@@ -34,7 +34,8 @@ function App() {
         {
           headers: { 
             Authorization: `Bearer ${import.meta.env.VITE_HF_TOKEN}`, 
-            "Content-Type": "application/json" 
+            "Content-Type": "application/json",
+            "Accept": "image/*"
           },
           method: "POST",
           body: JSON.stringify({ inputs: prompt }),
