@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/huggingface/:path*",
+      "destination": "https://router.huggingface.co/hf-inference/:path*"
+    },
+    {
+      "source": "/api/hf-chat/:path*",
+      "destination": "https://router.huggingface.co/:path*"
+    }
+  ]
+}
